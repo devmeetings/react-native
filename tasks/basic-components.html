@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tasks -&nbsp;Basic components
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" media="all" href="http://xpla.org/static/css/deck.3.0.0.css">
+    <style>
+      body {
+          padding-bottom: 2em;
+      }
+      
+      .additional::before {
+          content: 'Additional';
+          background-color: #0a90ce;
+          color: white;
+          padding: 0.25em 1em;
+          font-size: 66%;
+          border-radius: 0.25em;
+          margin-right: 0.5em;
+      }
+      
+    </style>
+  </head>
+  <body class="container">
+    <header>
+      <h1>Basic components</h1>
+    </header>
+    <ol>
+      <li>Create new project using Expo CLI:  <code>expo init</code>&nbsp; and choose <code>expo-template-blank</code></li>
+      <li>Display single note, for now it can be just text</li>
+      <li>Display list of notes</li>
+      <li>Apply styling to list</li>
+      <li class="additional">Add flag indicating whether note is completed or not, display only not completed notes</li>
+      <li class="additional">Divide notes to sections: todo, completed</li>
+    </ol>
+  </body>
+</html>

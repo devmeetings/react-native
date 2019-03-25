@@ -1,0 +1,49 @@
+mixin item(title)
+    header
+        h2= title
+    if block
+        block
+
+mixin btn(text, href)
+    a.btn.btn-default(href=href, target='_blank')= text
+
+doctype html
+html
+    block vars
+    head
+        title
+            block title
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+        link(rel='stylesheet', href='https://xpla.org/static/css/deck.3.0.0.css')
+        style.
+            .btn.btn-default {
+                border: none;
+                outline: 0;
+                padding: .46667rem;
+                color: #fff;
+                background: #0a90ce;
+                border-radius: 0;
+                min-width: 8rem;
+                margin: 0.5em;
+            }
+            .title {
+                text-align: center;
+                margin-top: 3em;
+            }
+            .subtitle {
+                text-align: center; 
+                color: #aaa;
+            }
+
+    body.container
+        header
+            a(href="http://devmeetings.com" style="float:left;")
+                img(src="https://xpla.org/static/devmeetings.png")
+            br(style="clear: both")
+            h1.title
+                block header
+            h3.subtitle
+                block date
+            h3.subtitle
+                block link
+        block program

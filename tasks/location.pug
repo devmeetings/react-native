@@ -1,0 +1,16 @@
+extends ../base-templates/tasks
+
+block vars
+    - var title = 'Location'
+
+block title
+    = title
+
+block header
+    h1= title
+
+block tasks
+    ol
+        li Add automatic save of current location when creating a new note
+        li Display MapView with note location in details view
+        li.additional Allow user to select location when creating/editing note

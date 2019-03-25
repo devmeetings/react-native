@@ -1,0 +1,22 @@
+extends ../base-templates/tasks
+
+block vars
+    - var title = 'Basic components'
+
+block title
+    = title
+
+block header
+    h1= title
+
+block tasks
+    ol
+        li Create new project using Expo CLI:  
+          code expo init
+          | &nbsp; and choose 
+          code expo-template-blank
+        li Display single note, for now it can be just text
+        li Display list of notes
+        li Apply styling to list
+        li.additional Add flag indicating whether note is completed or not, display only not completed notes
+        li.additional Divide notes to sections: todo, completed

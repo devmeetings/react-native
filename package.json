@@ -1,0 +1,30 @@
+{
+  "name": "devmeetings-react-native",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write 'bin/*.js'",
+    "build:slides": "node ./bin/build-slides.js",
+    "deploy": "git checkout gh-pages; git pull --no-edit origin master; git push origin gh-pages --force; git checkout -"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devmeetings/react-native.git"
+  },
+  "author": "DevMeeting",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devmeetings/react-native/issues"
+  },
+  "homepage": "https://github.com/devmeetings/react-native#readme",
+  "dependencies": {
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {
+    "inquirer": "^3.3.0",
+    "prettier": "^1.7.4",
+    "ramda": "^0.25.0"
+  }
+}

@@ -1,0 +1,17 @@
+extends ../base-templates/tasks
+
+block vars
+    - var title = 'Navigation'
+
+block title
+    = title
+
+block header
+    h1= title
+
+block tasks
+    ol
+        li Add view for displaying note details
+        li.additional Add separate view for creating new note/editing existing one
+        li.additional Add possibility to set planned date for note
+        li.additional Make date selecting working properly on both iOS and Android
